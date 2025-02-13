@@ -12,7 +12,7 @@ export default function Header() {
         <h1 className="header-title">Kiana Amini | Graphic Designer & Marketer</h1>
         <nav className="nav-menu">
           <Link to="/about" className="nav-item">About</Link>
-          <Link to="/work" className="nav-item">Work</Link>
+          <Link to="/work" className="nav-item">Projects</Link>
           <Link to="/contact" className="nav-item">Contact</Link>
         </nav>
       </div>
