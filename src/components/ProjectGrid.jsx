@@ -6,7 +6,8 @@ export default function ProjectGrid() {
     {
       id: 'pettersson',
       title: 'Elias Pettersson: Power and Precision',
-      image: '/images/peteymock2.png',
+      image: '/images/default-petey.jpg',
+      hoverImage: '/images/elias-pettersson.png',
       year: 2024,
     },
     {
@@ -25,12 +26,14 @@ export default function ProjectGrid() {
       id: 'billie-eilish',
       title: 'Hit Me Hard and Soft',
       image: '/images/Billie Eillish.jpg',
+      hoverImage: '/images/billie-mock.jpg',
       year: 2025,
     },
     {
       id: 'fashion-photography',
       title: 'Fashion Photography',
       image: '/images/photo1.jpg',
+      hoverImage: '/images/magazine-mock.png',
       year: 2024,
     },
     {
