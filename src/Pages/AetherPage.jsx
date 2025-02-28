@@ -24,7 +24,7 @@ export default function AetherPage() {
           </a>
       </div>
 
-      {/* Main Image */}
+   
       <div className="main-image-container">
         <img src="/images/aether-main.png" alt="Aether App Showcase" className="main-image" />
       </div>

@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f8f8f8;
@@ -23,7 +23,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Header Content */
+
 .header-content {
   display: flex;
   flex-direction: column;
@@ -66,7 +66,7 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Hover effect */
+
 .nav-item:hover {
   color: #a89583;
 }
@@ -88,7 +88,6 @@ body {
   animation: bounce 2s infinite;
 }
 
-/* Bounce animation */
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -165,7 +164,7 @@ body {
 }
 
 
-/* Title & Year */
+
 .project-title {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
@@ -179,7 +178,7 @@ body {
   color: #777;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 1200px) {
   .project-grid {
     grid-template-columns: repeat(2, 1fr); 

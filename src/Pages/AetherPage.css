@@ -1,4 +1,4 @@
-/* Full-viewport background */
+
 body {
   font-family: 'Figtree', sans-serif;
   color: #4a3835;
@@ -11,18 +11,18 @@ body {
   align-items: center;
 }
 
-/* Content Container */
+
 .aether-page {
   width: 100%;
   max-width: 1100px;
   padding: 50px;
-  background: white; /* Clean, professional background */
-  border-radius: 12px; /* Soft rounded edges */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background: white; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 }
 
 
-/* Back Button */
+
 .back-button {
   display: inline-block;
   font-size: 1rem;
@@ -39,7 +39,7 @@ body {
 
 
 
-/* Title & Subtitle */
+
 .aether-title {
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
@@ -56,7 +56,7 @@ body {
   text-align: center;
 }
 
-/* Social & Blog Button */
+
 .social-links {
   display: flex;
   justify-content: center;
@@ -80,7 +80,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Main Image */
+
 .main-image-container {
   text-align: center;
   margin-bottom: 40px;
@@ -93,7 +93,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Styling */
+
 .content-section {
   max-width: 850px;
   margin: 60px auto;
@@ -117,12 +117,12 @@ body {
   max-width: 750px; 
 }
 
-/* Enhanced Quote Styling */
+
 .quote {
   font-size: 1.2rem;
   font-style: italic;
   color: #4a3835;
-  background-color: rgba(74, 56, 53, 0.08); /* More visible */
+  background-color: rgba(74, 56, 53, 0.08); 
   padding: 20px 30px;
   border-left: 5px solid #4a3835;
   max-width: 800px;
