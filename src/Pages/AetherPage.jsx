@@ -90,11 +90,26 @@ export default function AetherPage() {
       </div>
 
       <div className="content-section">
-        <h2 className="section-title">Design Process</h2>
-        <p className="section-text"><strong>Designing with Clarity:</strong> Clarity is at the heart of our design philosophy, making every interaction intuitive and effortless.</p>
-        <p className="section-text"><strong>Summarizing User Flow:</strong> Our design breaks complex navigation into easy steps, making the app more comfortable to use.</p>
-        <p className="section-text"><strong>Streamlining User Experience:</strong> We ensure that every action is direct and easy through streamlined navigation and clear steps.</p>
-      </div>
+  <h2 className="section-title">Design Process</h2>
+
+  <p className="section-text">
+    <strong>Designing with Clarity:</strong> Clarity is at the heart of our design philosophy, ensuring every interaction is 
+    intuitive and effortless. We prioritized a clean layout, high-contrast typography, and a structured interface to minimize 
+    cognitive load. <br/><br/> 
+    <strong>Impact:</strong> Users can navigate with confidence, reducing frustration and improving engagement.
+  </p>
+
+  <p className="section-text">
+    <strong>Summarizing User Flow:</strong> To simplify navigation, we broke down complex tasks into clear, manageable steps. This allows users to understand where they are in a process and what comes next. <br/><br/> 
+    <strong>Impact:</strong> Users complete tasks faster and with fewer errors, leading to higher efficiency.
+  </p>
+
+  <p className="section-text">
+    <strong>Streamlining User Experience:</strong> We eliminated unnecessary steps, optimized navigation, and introduced 
+    autofill and predictive text to reduce manual input. The goal was to make interactions seamless and time-efficient. <br/><br/> 
+    <strong>Impact:</strong> Users experience less friction, complete tasks faster, and require minimal training.
+  </p>
+</div>
 
       <div className="content-section">
         <h2 className="section-title">Marketing & Branding</h2>

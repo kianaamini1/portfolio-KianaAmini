@@ -13,7 +13,8 @@ export default function ProjectGrid() {
     {
       id: 'aether',
       title: 'Aether Designer/Marketer',
-      image: '/images/Onboard-full.jpg',
+      image: '/images/mockup1.jpg',
+      hoverImage: '/images/Onboard-full.jpg',
       year: 2024,
     },
     {

@@ -6,6 +6,7 @@ import AetherPage from './Pages/AetherPage';
 import EliasPage from './Pages/EliasPage';
 import HughesPage from './Pages/HughesPage';
 import DaydreamingPage from './Pages/DaydreamingPage';
+import BilliePage from './Pages/BilliePage';
 // Import other project pages as needed
 
 export default function App() {
@@ -17,6 +18,8 @@ export default function App() {
         <Route path="/projects/pettersson" element={<EliasPage />} />
         <Route path="/projects/hughes" element={<HughesPage />} />
         <Route path="/projects/daydreaming-cover" element={<DaydreamingPage />} />
+        <Route path="/projects/billie-eilish" element={<BilliePage />} />
+
         {/* Add more routes for other projects */}
       </Routes>
     </Router>

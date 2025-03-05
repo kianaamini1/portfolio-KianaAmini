@@ -14,9 +14,10 @@ export default function DaydreamingPage() {
 
       <h1 className="daydreaming-title">Cover: Daydreaming-Single</h1>
       <p className="daydreaming-description">
-        Edited cover of artist Marika Screpnek's new song <b>Daydreaming</b> using Photoshop to execute her vision.
-      </p>
-
+  This project is an <strong>edited cover design</strong> for artist <strong>Marika Screpnek's</strong> new song <em>Daydreaming</em>. 
+  Using <strong>Photoshop</strong>, I helped execute the artist’s vision by enhancing the overall aesthetic while maintaining 
+  the dreamy, sunlit atmosphere of the original image.
+  </p>
      <div className="social-icons">
   <a href="https://open.spotify.com/track/4wxfU2Zyt7uhn3T8nwOT8v?si=189a8ca205584cab" target="spotify" rel="Daydreaming">
     <i className="fab fa-spotify"></i>
@@ -27,11 +28,19 @@ export default function DaydreamingPage() {
       <div className="main-image-container">
         <img src="/images/daydreaming.jpg" alt="Daydreaming Cover" className="main-image" />
       </div>
+      <p className="daydreaming-description">
+      Key modifications include:
+  <ul className="daydreaming-list">
+    <li><strong>Customized the license plate</strong> to display the song title (<em>DAY-DRM</em>), subtly integrating it into the scene.</li>
+    <li><strong>Applied minor touch-ups</strong> to enhance lighting, contrast, and the nostalgic, vintage-like feel of the cover.</li>
+    <li><strong>Added the song title in a curved placement</strong>, complementing the composition without overpowering the focal point.</li>
+  </ul>
+  <br/>
+  This design blends <strong>photo editing, typography, and visual storytelling</strong>, creating a cover that feels <strong>warm, 
+  free-spirited, and evocative of the song’s theme.</strong>
+</p>
 
-      
-      <p className="edit-description">
-        Modified the license plate to display the song title, applied minor overall touch-ups, and added the song title to the photo.
-      </p>
+
     </div>
   );
 }
