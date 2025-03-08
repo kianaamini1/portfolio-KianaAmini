@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import WorkPage from './Pages/WorkPage';
+import Photography from './Pages/Photography';
 import AetherPage from './Pages/AetherPage';
 import EliasPage from './Pages/EliasPage';
 import HughesPage from './Pages/HughesPage';
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/projects/hughes" element={<HughesPage />} />
         <Route path="/projects/daydreaming-cover" element={<DaydreamingPage />} />
         <Route path="/projects/billie-eilish" element={<BilliePage />} />
+        <Route path="/Photography" element={<Photography/>}/>
 
         {/* Add more routes for other projects */}
       </Routes>
