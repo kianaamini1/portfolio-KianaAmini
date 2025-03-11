@@ -8,10 +8,11 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-content">
-        <div className="logo-container">
-          <span className="logo">LOGO</span>
-        </div>
-        <h1 className="header-title">Kiana Amini | Graphic Designer & Marketer</h1>
+      <div className="logo-container">
+  <img src="/images/maroon.png" alt="Kiana Amini Logo" className="logo-image" />
+</div>
+        <h1 className="header-name">Kiana Amini </h1>
+        <h1 className="header-title">Graphic Designer & Marketer </h1>
         <nav className="nav-menu">
           <Link to="/about" className="nav-item">About</Link>
 
@@ -29,7 +30,7 @@ export default function Header() {
       </div>
 
       <div className="scroll-down">
-        <span>See Projects</span>
+        {/* <span>See Projects</span> */}
         <div className="arrow-down">↓</div>
       </div>
     </header>
