@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import '../index.css';
 
 export default function Header() {
-  const location = useLocation(); // Get current page route
+  const location = useLocation();
 
   return (
     <header className="header">
