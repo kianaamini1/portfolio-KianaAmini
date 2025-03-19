@@ -46,7 +46,7 @@ export default function ProjectGrid() {
       year: 2024,
     },
     {
-      id: 'canavino-label',
+      id: 'CanaVino',
       title: 'CanaVino: canned label',
       image: '/images/Can-cover.png',
       year: 2024,

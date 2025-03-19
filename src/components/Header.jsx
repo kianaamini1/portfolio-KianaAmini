@@ -9,7 +9,7 @@ export default function Header() {
     <header className="header">
       <div className="header-content">
       <div className="logo-container">
-  <img src="/images/maroon.png" alt="Kiana Amini Logo" className="logo-image" />
+  <img src="/images/brown.png" alt="Kiana Amini Logo" className="logo-image" />
 </div>
         <h1 className="header-name">Kiana Amini </h1>
         <h1 className="header-title">Graphic Designer & Marketer </h1>
