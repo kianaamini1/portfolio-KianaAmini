@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import "./photography.css";
+import "./Photography.css";
 
 const images = [
   "#FF5733", "#33FF57", "#3357FF", "#FFD700", "#FF33A8",
