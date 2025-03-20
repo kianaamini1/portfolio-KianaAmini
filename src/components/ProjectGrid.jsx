@@ -1,54 +1,68 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 
+// Importing images into the component
+import petterssonImage from '../assets/images/default-petey.jpg';
+import petterssonHoverImage from '../assets/images/elias-pettersson.png';
+import aetherImage from '../assets/images/mockup1.jpg';
+import aetherHoverImage from '../assets/images/Onboard-full.jpg';
+import daydreamingImage from '../assets/images/daydreaming.jpg';
+import daydreamingHoverImage from '../assets/images/vinyls copy.png';
+import billieImage from '../assets/images/Billie Eillish.jpg';
+import billieHoverImage from '../assets/images/billie-mock.jpg';
+import hughesImage from '../assets/images/Hughes.jpg';
+import hughesHoverImage from '../assets/images/ad2.png';
+import fashionImage from '../assets/images/magazine-mock.png';
+import canavinoImage from '../assets/images/Can-cover.png';
+
 export default function ProjectGrid() {
   const projects = [
     {
       id: 'pettersson',
       title: 'Elias Pettersson: Power and Precision',
-      image: '/images/default-petey.jpg',
-      hoverImage: '/images/elias-pettersson.png',
+      image: petterssonImage,
+      hoverImage: petterssonHoverImage,
       year: 2024,
     },
     {
       id: 'aether',
       title: 'Aether Designer/Marketer',
-      image: '/images/mockup1.jpg',
-      hoverImage: '/images/Onboard-full.jpg',
+      image: aetherImage,
+      hoverImage: aetherHoverImage,
       year: 2024,
     },
     {
       id: 'daydreaming-cover',
       title: 'Cover: Daydreaming-single',
-      image: '/images/daydreaming.jpg',
-      hoverImage: '/images/vinyls copy.png',
+      image: daydreamingImage,
+      hoverImage: daydreamingHoverImage,
       year: 2024,
     },
     {
       id: 'billie-eilish',
       title: 'Hit Me Hard and Soft',
-      image: '/images/Billie Eillish.jpg',
-      hoverImage: '/images/billie-mock.jpg',
+      image: billieImage,
+      hoverImage: billieHoverImage,
       year: 2025,
     },
     {
       id: 'hughes',
       title: 'Quinn Hughes: Defining Legacy',
-      image: '/images/Hughes.jpg',
-      hoverImage: '/images/ad2.png',
+      image: hughesImage,
+      hoverImage: hughesHoverImage,
       year: 2025,
     },
     {
       id: 'fashion-photography',
       title: 'Fashion Photography',
-      image: '/images/photo1.jpg',
-      hoverImage: '/images/magazine-mock.png',
+      image: fashionImage,
+      hoverImage: fashionImage, // Assuming hover image is the same for this project
       year: 2024,
     },
     {
       id: 'CanaVino',
       title: 'CanaVino: canned label',
-      image: '/images/Can-cover.png',
+      image: canavinoImage,
       year: 2024,
     },
   ];

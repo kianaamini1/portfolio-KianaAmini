@@ -10,6 +10,7 @@ import DaydreamingPage from './Pages/DaydreamingPage';
 import BilliePage from './Pages/BilliePage';
 import FashionPage from './Pages/FashionPage';
 import CanaVinoPage from './Pages/CanaVinoPage';
+import About from './Pages/About';
 // Import other project pages as needed
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/projects/billie-eilish" element={<BilliePage />} />
         <Route path="/projects/canavino" element={<CanaVinoPage />} />
         <Route path="/Photography" element={<Photography/>}/>
+        <Route path="/About" element={<About/>}/>
         
 
         {/* Add more routes for other projects */}

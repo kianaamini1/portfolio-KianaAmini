@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logoImage from '../assets/images/brown.png';
 import '../index.css';
 
 export default function Header() {
@@ -9,12 +10,12 @@ export default function Header() {
     <header className="header">
       <div className="header-content">
       <div className="logo-container">
-  <img src="/images/brown.png" alt="Kiana Amini Logo" className="logo-image" />
+      <img src={logoImage} alt="Kiana Amini Logo" className="logo-image" />
 </div>
         <h1 className="header-name">Kiana Amini </h1>
         <h1 className="header-title">Graphic Designer & Marketer </h1>
         <nav className="nav-menu">
-          <Link to="/about" className="nav-item">About</Link>
+          <Link to="/About" className="nav-item">About</Link>
 
           {/* Change "Photography" to "Projects" when on the Photography page */}
           {location.pathname === "/photography" ? (
