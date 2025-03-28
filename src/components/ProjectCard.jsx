@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 export default function ProjectCard({ project }) {
   const navigate = useNavigate();
 
-  if (!project) return null; // Prevents crashes if no project data
+  if (!project) return null; 
 
   return (
     <div 
@@ -16,7 +16,7 @@ export default function ProjectCard({ project }) {
     >
       <div className="project-image-container">
         <img src={project.image} alt={project.title} className="project-image default-image" />
-        {project.hoverImage && ( // Only show hover image if it exists
+        {project.hoverImage && ( 
           <img src={project.hoverImage} alt={`${project.title} Hover`} className="project-image hover-image" />
         )}
       </div>

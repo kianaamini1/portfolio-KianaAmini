@@ -1,4 +1,4 @@
-/* General Page Styling */
+
 body {
   font-family: 'Figtree', sans-serif;
   color: #4a3835;
@@ -11,38 +11,29 @@ body {
   align-items: center;
 }
 
-/* Main Page Container */
+
 .daydreaming-page {
-  width: 100%;
-  max-width: 1100px;
-  padding: 50px;
-  background: white; 
-  border-radius: 12px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  width: 100vw;
+    padding: 0px;
+    background: white;
+    box-shadow: none;  
+    border-radius: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; 
+    margin-top: 0;
 }
 
-/* Back Button */
-.back-button {
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #ffffff;
-  background-color: #4a3835;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
 
 .back-button:hover {
   background-color: #6d5d57;
   transform: scale(1.05);
 }
 
-/* Title & Description */
+
 .daydreaming-title {
+  margin-top: 40px;
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
   font-weight: 700;
@@ -60,7 +51,7 @@ body {
   margin: 0 auto;
 }
 
-/* Social Icons */
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -88,7 +79,7 @@ body {
 }
 
 .social-icons a:hover {
-  background-color: #1DB954; /* Spotify Green */
+  background-color: #1DB954; 
   transform: scale(1.1);
 }
 
@@ -96,20 +87,20 @@ body {
   color: #fff;
 }
 
-/* Main Image */
+
 .main-image-container {
   text-align: center;
   margin-bottom: 40px;
 }
 
 .main-image {
-  width: 90%; /* Slightly smaller for balance */
-  max-width: 600px; /* Same size as Billie and Elias pages */
+  width: 90%; 
+  max-width: 600px; 
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Edit Description */
+
 .edit-description {
   font-size: 1rem;
   color: #6d5d57;
@@ -119,7 +110,7 @@ body {
   line-height: 1.5;
 }
 
-/* Content Section */
+
 .content-section {
   max-width: 850px;
   margin: 60px auto;
@@ -141,9 +132,9 @@ body {
   margin-top: 30px; 
   margin-bottom: 30px;
   max-width: 750px; 
+  text-align: center;
 }
 
-/* Footer */
 .footer {
   margin-top: 40px;
   font-size: 1rem;
@@ -152,5 +143,15 @@ body {
 }
 
 .daydreaming-list {
+  margin: 0 auto; 
+  max-width: 600px; 
+  padding-left: 20px;
   text-align: left;
+}
+
+.daydreaming-list li {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  max-width: 100%; 
 }

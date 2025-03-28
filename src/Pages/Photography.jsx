@@ -4,22 +4,28 @@ import "./Photography.css";
 
 import cameraImage from '../assets/images/camera.png';
 
+
 const images = [
-  "#FF5733", "#33FF57", "#3357FF", "#FFD700", "#FF33A8",
-  "#8A2BE2", "#FF4500", "#228B22", "#1E90FF", "#DC143C"
+  "https://via.placeholder.com/300", "https://via.placeholder.com/300", "https://via.placeholder.com/300",
+  "https://via.placeholder.com/300", "https://via.placeholder.com/300", "https://via.placeholder.com/300",
+  "https://via.placeholder.com/300", "https://via.placeholder.com/300", "https://via.placeholder.com/300",
+  "https://via.placeholder.com/300"
 ];
 
 export default function Photography() {
   const [showGallery, setShowGallery] = useState(false);
-  const [showRainGallery, setShowRainGallery] = useState(false); 
-
+  const [modalImage, setModalImage] = useState(null);
 
   const handleClick = () => {
     setShowGallery(true); 
   };
 
-  const handleToggleGallery = () => {
-    setShowRainGallery(!showRainGallery); 
+  const handleImageClick = (image) => {
+    setModalImage(image);  // Set the image for the modal view
+  };
+
+  const handleCloseModal = () => {
+    setModalImage(null);    // Close the modal
   };
 
   return (
@@ -29,7 +35,6 @@ export default function Photography() {
       <div className="camera-container">
         {!showGallery ? (
           <div className="camera">
-           
             <img
               src={cameraImage} 
               alt="Camera"
@@ -37,34 +42,25 @@ export default function Photography() {
               onClick={handleClick}
             />
             <div className="arrow">↓</div>
-            {/* <div className="click">Click the camera button</div> */}
           </div>
         ) : (
           <div className="gallery-container">
-            <button onClick={handleToggleGallery} className="toggle-button">
-              {showRainGallery ? 'Switch to 3D Circle Gallery' : 'Switch to Rain Gallery'}
-            </button>
-
-            {showRainGallery ? (
-              <div className="rain-gallery">
-                
-                {images.map((color, index) => (
-                  <div key={index} className="falling-photo">
-                    <div style={{ backgroundColor: color }}></div>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="circle-gallery">
-                
-                {images.map((color, index) => (
-                  <div key={index} className="circle-item" style={{ backgroundColor: color }} />
-                ))}
-              </div>
-            )}
+            <div className="circle-gallery">
+              {images.map((image, index) => (
+                <div key={index} className="circle-item" onClick={() => handleImageClick(image)}>
+                  <img src={image} alt={`Gallery ${index}`} className="circle-image" />
+                </div>
+              ))}
+            </div>
           </div>
         )}
       </div>
+
+      {modalImage && (
+        <div className="modal" onClick={handleCloseModal}>
+          <img src={modalImage} alt="Large view" className="modal-image" />
+        </div>
+      )}
     </div>
   );
 }

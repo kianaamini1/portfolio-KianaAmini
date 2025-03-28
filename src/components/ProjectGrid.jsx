@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 
-// Importing images into the component
+
 import petterssonImage from '../assets/images/default-petey.jpg';
 import petterssonHoverImage from '../assets/images/elias-pettersson.png';
 import aetherImage from '../assets/images/mockup1.jpg';
@@ -56,7 +56,7 @@ export default function ProjectGrid() {
       id: 'fashion-photography',
       title: 'Fashion Photography',
       image: fashionImage,
-      hoverImage: fashionImage, // Assuming hover image is the same for this project
+      hoverImage: fashionImage, 
       year: 2024,
     },
     {

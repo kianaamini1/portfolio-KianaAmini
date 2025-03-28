@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f8f8f8;
@@ -13,38 +12,45 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 420px; 
+  width: 100%;
+  height: 420px;
   background: linear-gradient(to bottom, #f4f1eb, #e7e1da);
   color: #4a3835;
-  padding: 50px 0;
+  padding: 0;
   border-bottom: 1px solid #ddd;
-  position: relative;
-  box-sizing: border-box;
-}
 
+}
 
 .header-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 900px;
+  width: 100%; 
+  padding: 0 ; 
 }
-
 
 .logo-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
-  position: absolute; 
-  top: 20px; 
-  left: 40px; 
+  justify-content: flex-start;
+  position: absolute;
+  top: 20px;
+  left: 40px;
 }
 
 .logo-image {
-  width: 95px; 
+  width: 95px;
   height: auto;
+}
+
+.header-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #4a3835;
+  margin-bottom: 2px;
+  text-align: center;
 }
 
 .header-title {
@@ -55,15 +61,6 @@ body {
   margin-bottom: 30px;
   text-align: center;
 }
-.header-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.4rem;
-  font-weight: 600;
-  color: #4a3835;
-  margin-bottom: 2px;
-  text-align: center;
-}
-
 
 .nav-menu {
   display: flex;
@@ -82,11 +79,9 @@ body {
   transition: color 0.3s ease;
 }
 
-
 .nav-item:hover {
   color: #a89583;
 }
-
 
 .scroll-down {
   position: absolute;
@@ -112,7 +107,6 @@ body {
     transform: translateY(8px);
   }
 }
-
 
 .project-grid {
   display: grid;
@@ -170,7 +164,7 @@ body {
   z-index: 1; 
 }
 
-/* Hover Effect: Swap Images */
+
 .project-image-container:hover .default-image {
   opacity: 0; 
 }

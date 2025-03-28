@@ -1,27 +1,31 @@
-/* General Page Styling */
+
 body {
-    font-family: 'Figtree', sans-serif;
-    color: #4a3835;
-    background: linear-gradient(to bottom, #f8f6f4, #ede8e3);
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-family: 'Figtree', sans-serif;
+  color: #4a3835;
+  background: linear-gradient(to bottom, #f8f6f4, #ede8e3);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
   
-  /* Main Page Container */
+
   .canavino-page {
-    width: 100%;
-    max-width: 1100px;
-    padding: 50px;
-    background: white;
-    border-radius: 12px; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    width: 100vw;
+  padding: 0px;
+  background: white;
+  box-shadow: none; 
+  border-radius: 0; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto; 
+  margin-top: 0 
   }
   
-  /* Back Button */
+
   .back-button {
     display: inline-block;
     font-size: 1rem;
@@ -42,7 +46,7 @@ body {
     transform: scale(1.05);
   }
   
-  /* Title & Description */
+
   .canavino-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.8rem;
@@ -61,7 +65,7 @@ body {
     margin: 0 auto;
   }
   
-  /* Main Image (Slightly Smaller) */
+
   .canavino-image-container {
     text-align: center;
     margin-bottom: 20px;
@@ -75,11 +79,11 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
-  /* Can Label Display */
+
   .can-label-display {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Increased gap for more space */
+    gap: 30px; 
     margin-bottom: 50px;
   }
   
@@ -114,7 +118,7 @@ body {
     max-width: 750px; 
   }
   
-  /* Footer */
+
   .footer {
     margin-top: 40px;
     font-size: 1rem;
@@ -122,7 +126,7 @@ body {
     text-align: center;
   }
   
-  /* Responsive Design for Smaller Screens */
+
   @media (max-width: 900px) {
     .can-label-display {
       flex-wrap: wrap; 
@@ -131,18 +135,18 @@ body {
     }
   
     .can-label-image {
-      max-width: 260px; /* Slightly smaller for medium screens */
+      max-width: 260px; 
     }
   }
   
   @media (max-width: 600px) {
     .can-label-display {
-      flex-direction: column; /* Stacks images vertically on small screens */
+      flex-direction: column; 
       align-items: center;
-      gap: 15px; /* Less space when stacked */
+      gap: 15px; 
     }
   
     .can-label-image {
-      max-width: 90%; /* Makes images fit well on mobile */
+      max-width: 90%; 
     }
   }

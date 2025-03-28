@@ -11,11 +11,12 @@ import BilliePage from './Pages/BilliePage';
 import FashionPage from './Pages/FashionPage';
 import CanaVinoPage from './Pages/CanaVinoPage';
 import About from './Pages/About';
-// Import other project pages as needed
+import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
 
 export default function App() {
   return (
     <Router>
+      <ScrollToTop /> {/* This ensures the scroll is reset on route change */}
       <Routes>
         <Route path="/" element={<WorkPage />} />
         <Route path="/projects/aether" element={<AetherPage />} />
@@ -25,11 +26,8 @@ export default function App() {
         <Route path="/projects/fashion-photography" element={<FashionPage />} />
         <Route path="/projects/billie-eilish" element={<BilliePage />} />
         <Route path="/projects/canavino" element={<CanaVinoPage />} />
-        <Route path="/Photography" element={<Photography/>}/>
-        <Route path="/About" element={<About/>}/>
-        
-
-        {/* Add more routes for other projects */}
+        <Route path="/Photography" element={<Photography />} />
+        <Route path="/About" element={<About />} />
       </Routes>
     </Router>
   );

@@ -1,5 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Photo1 from '../assets/images/photo1.jpg';  
+import Photo5 from '../assets/images/photo5.jpg';  
+import Photo10 from '../assets/images/photo10.jpg'; 
+import Header from '../components/Header';  
 import './FashionPage.css';
 
 export default function FashionPage() {
@@ -7,7 +11,7 @@ export default function FashionPage() {
 
   return (
     <div className="fashion-page">
-      <button className="back-button" onClick={() => navigate('/')}>← Back to Projects</button>
+      <Header />  
 
       <h1 className="fashion-title">Fashion Photography</h1>
       <p className="fashion-description">
@@ -16,7 +20,6 @@ export default function FashionPage() {
         brand identity using Photoshop.
       </p>
 
-      {/* Social Links */}
       <div className="social-icons">
         <a href="https://www.linkedin.com/in/kianaamini" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin"></i>
@@ -26,22 +29,17 @@ export default function FashionPage() {
         </a>
       </div>
 
-      {/* Photography Grid */}
       <div className="fashion-gallery">
-        <img src="/images/photo1.jpg" alt="Fashion Shot 1" className="fashion-image" />
-        <img src="/images/photo5.jpg" alt="Fashion Shot 2" className="fashion-image" />
-        <img src="/images/photo10.jpg" alt="Fashion Shot 3" className="fashion-image" />
-        <img src="/images/photo1.jpg" alt="Fashion Shot 4" className="fashion-image" />
-        <img src="/images/photo1.jpg" alt="Fashion Shot 4" className="fashion-image" />
-        <img src="/images/photo1.jpg" alt="Fashion Shot 4" className="fashion-image" />
-        <img src="/images/photo1.jpg" alt="Fashion Shot 4" className="fashion-image" />
-        <img src="/images/photo1.jpg" alt="Fashion Shot 4" className="fashion-image" />
-        <img src="/images/photo1.jpg" alt="Fashion Shot 4" className="fashion-image" />
+        <img src={Photo1} alt="Fashion Shot 1" className="fashion-image" />
+        <img src={Photo5} alt="Fashion Shot 2" className="fashion-image" />
+        <img src={Photo10} alt="Fashion Shot 3" className="fashion-image" />
+        <img src={Photo1} alt="Fashion Shot 4" className="fashion-image" />
+        <img src={Photo1} alt="Fashion Shot 5" className="fashion-image" />
+        <img src={Photo1} alt="Fashion Shot 6" className="fashion-image" />
+        <img src={Photo1} alt="Fashion Shot 7" className="fashion-image" />
+        <img src={Photo1} alt="Fashion Shot 8" className="fashion-image" />
+        <img src={Photo1} alt="Fashion Shot 9" className="fashion-image" />
       </div>
-
-      {/* <footer className="footer">
-        <p>Email: <a href="mailto:kianaamini.design@gmail.com">kianaamini.design@gmail.com</a></p>
-      </footer> */}
     </div>
   );
 }
