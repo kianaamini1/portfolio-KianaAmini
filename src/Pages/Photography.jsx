@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import "./Photography.css";
+import "./Photography.css"; 
 
 import cameraImage from '../assets/images/camera.png';
-
 
 const images = [
   "https://via.placeholder.com/300", "https://via.placeholder.com/300", "https://via.placeholder.com/300",
@@ -17,19 +16,19 @@ export default function Photography() {
   const [modalImage, setModalImage] = useState(null);
 
   const handleClick = () => {
-    setShowGallery(true); 
+    setShowGallery(true);
   };
 
   const handleImageClick = (image) => {
-    setModalImage(image);  // Set the image for the modal view
+    setModalImage(image);  
   };
 
   const handleCloseModal = () => {
-    setModalImage(null);    // Close the modal
+    setModalImage(null);    
   };
 
   return (
-    <div>
+    <div className="photography-page">
       <Header />
     
       <div className="camera-container">
@@ -41,7 +40,7 @@ export default function Photography() {
               className="camera-img"
               onClick={handleClick}
             />
-            <div className="arrow">↓</div>
+            <h2 className="take-photo-header">Take a Photo!</h2> 
           </div>
         ) : (
           <div className="gallery-container">

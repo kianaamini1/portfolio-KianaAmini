@@ -28,7 +28,7 @@ export default function Header() {
       </div>
 
       <div className="scroll-down">
-        <div className="arrow-down">↓</div>
+        
       </div>
     </header>
   );
