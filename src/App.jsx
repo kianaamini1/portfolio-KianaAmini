@@ -11,7 +11,8 @@ import BilliePage from './Pages/BilliePage';
 import FashionPage from './Pages/FashionPage';
 import CanaVinoPage from './Pages/CanaVinoPage';
 import About from './Pages/About';
-import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
+import ScrollToTop from './components/ScrollToTop'; 
+import Contact from './Pages/Contact';
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="/projects/canavino" element={<CanaVinoPage />} />
         <Route path="/Photography" element={<Photography />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
     </Router>
   );

@@ -4,11 +4,20 @@ import "./Photography.css";
 
 import cameraImage from '../assets/images/camera.png';
 
+// Import images with correct paths
+import image1 from '../assets/images/ains.png';
+import image2 from '../assets/images/flowers.png';
+import image3 from '../assets/images/inspire.png';
+import image4 from '../assets/images/izzy.png';
+import image5 from '../assets/images/izzy1.png';
+import image6 from '../assets/images/ruby.png';
+import image7 from '../assets/images/snow.png';
+import image8 from '../assets/images/snow2.png';
+import image9 from '../assets/images/stairs.png';
+import image10 from '../assets/images/sugar.png';
+
 const images = [
-  "https://via.placeholder.com/300", "https://via.placeholder.com/300", "https://via.placeholder.com/300",
-  "https://via.placeholder.com/300", "https://via.placeholder.com/300", "https://via.placeholder.com/300",
-  "https://via.placeholder.com/300", "https://via.placeholder.com/300", "https://via.placeholder.com/300",
-  "https://via.placeholder.com/300"
+  image1, image2, image3, image4, image5, image6, image7, image8, image9, image10
 ];
 
 export default function Photography() {

@@ -14,6 +14,8 @@ import hughesImage from '../assets/images/Hughes.jpg';
 import hughesHoverImage from '../assets/images/ad2.png';
 import fashionImage from '../assets/images/magazine-mock.png';
 import canavinoImage from '../assets/images/Can-cover.png';
+import canavinoHoverImage from '../assets/images/white2.png';
+import white2 from '../assets/images/white2.png';
 
 export default function ProjectGrid() {
   const projects = [
@@ -63,6 +65,7 @@ export default function ProjectGrid() {
       id: 'CanaVino',
       title: 'CanaVino: canned label',
       image: canavinoImage,
+      hoverImage: white2, 
       year: 2024,
     },
   ];

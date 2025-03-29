@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header"; 
+import meImage from '../assets/images/me.png'; 
 import './About.css'; 
 
 const About = () => {
@@ -7,6 +8,12 @@ const About = () => {
     <div className="about-container">
       <Header /> 
       <div className="content-section">
+        {/* About photo placed first */}
+        <div className="about-photo-container">
+          <img src={meImage} alt="Kiana Amini" />
+        </div>
+
+        {/* Text content below the image */}
         <h1 className="about-title">About</h1>
         <div className="about-content">
           <div className="about-text">
@@ -24,9 +31,6 @@ const About = () => {
             </p>
             <p>Email: kianaamini.design@gmail.com</p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/kiana-amini-053ka" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/kiana-amini-053ka</a></p>
-          </div>
-          <div className="about-photo">
-            <img src="/images/kiana-photo.jpg" alt="Kiana Amini" />
           </div>
         </div>
       </div>

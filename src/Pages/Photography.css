@@ -69,9 +69,10 @@ body {
   margin: auto;
 }
 
+/* The general container styling remains the same */
 .circle-item {
-  width: 200px;
-  height: 200px;
+  width: 250px; /* Increase the width to make the item bigger */
+  height: 250px; /* Increase the height to make the item bigger */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -96,45 +97,47 @@ body {
   }
 }
 
+/* Adjust transform for all circle items to make them bigger */
 .circle-item:nth-child(1) {
-  transform: rotateY(0deg) translateZ(450px);
+  transform: rotateY(0deg) translateZ(500px); /* Adjust translateZ for more depth */
 }
 
 .circle-item:nth-child(2) {
-  transform: rotateY(36deg) translateZ(450px);
+  transform: rotateY(36deg) translateZ(500px); 
 }
 
 .circle-item:nth-child(3) {
-  transform: rotateY(72deg) translateZ(450px);
+  transform: rotateY(72deg) translateZ(500px); 
 }
 
 .circle-item:nth-child(4) {
-  transform: rotateY(108deg) translateZ(450px);
+  transform: rotateY(108deg) translateZ(500px);
 }
 
 .circle-item:nth-child(5) {
-  transform: rotateY(144deg) translateZ(450px);
+  transform: rotateY(144deg) translateZ(500px); 
 }
 
 .circle-item:nth-child(6) {
-  transform: rotateY(180deg) translateZ(450px);
+  transform: rotateY(180deg) translateZ(500px); 
 }
 
 .circle-item:nth-child(7) {
-  transform: rotateY(216deg) translateZ(450px);
+  transform: rotateY(216deg) translateZ(500px); 
 }
 
 .circle-item:nth-child(8) {
-  transform: rotateY(252deg) translateZ(450px);
+  transform: rotateY(252deg) translateZ(500px); 
 }
 
 .circle-item:nth-child(9) {
-  transform: rotateY(288deg) translateZ(450px);
+  transform: rotateY(288deg) translateZ(500px); 
 }
 
 .circle-item:nth-child(10) {
-  transform: rotateY(324deg) translateZ(450px);
+  transform: rotateY(324deg) translateZ(500px); 
 }
+
 
 .modal {
   position: fixed;

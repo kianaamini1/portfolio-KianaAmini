@@ -1,4 +1,4 @@
-/* Body and page layout */
+
 body {
   font-family: 'Figtree', sans-serif;
   color: #4a3835;
@@ -20,23 +20,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto; 
-  margin-top: 0
+  margin-top: 0;
+  padding-top: 30px;
 }
 
-
-.canavino-title-container {
-  margin-top: 40px;
-  text-align: center;
-  margin-bottom: 40px;
-}
 
 .canavino-title {
   margin-top: 40px;
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color: #222;
 }
 
@@ -49,7 +43,7 @@ body {
   margin: 0 auto;
 }
 
-/* Image styles */
+
 .canavino-image-container {
   text-align: center;
   margin-bottom: 20px;
@@ -63,7 +57,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Label display section */
+
 .can-label-display {
   display: flex;
   justify-content: center;
@@ -78,7 +72,26 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer section */
+
+.bottom-can-images {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.additional-can-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bottom-can-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
 .footer {
   margin-top: 40px;
   font-size: 1rem;
@@ -86,7 +99,7 @@ body {
   text-align: center;
 }
 
-/* Media queries for responsiveness */
+
 @media (max-width: 900px) {
   .can-label-display {
     flex-wrap: wrap;
@@ -96,6 +109,15 @@ body {
 
   .can-label-image {
     max-width: 260px;
+  }
+
+  .additional-can-images {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .bottom-can-image {
+    max-width: 250px;
   }
 }
 
@@ -107,6 +129,16 @@ body {
   }
 
   .can-label-image {
+    max-width: 90%;
+  }
+
+  .additional-can-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .bottom-can-image {
     max-width: 90%;
   }
 }
