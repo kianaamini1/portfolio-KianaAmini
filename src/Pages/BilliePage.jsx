@@ -32,7 +32,6 @@ export default function BilliePage() {
         a <strong>tribute to Billie’s storytelling style</strong>, transforming the album’s themes of <strong>vulnerability, loss, and transformation</strong> into a new visual perspective.
       </p>
 
-      <h2 className="section-title">Poster Displays</h2>
       <div className="poster-display">
         <img src={BillieMockImage} alt="Framed Poster" className="poster-image" />
         <img src={BillieMockImage} alt="Outdoor Billboard" className="poster-image" />
