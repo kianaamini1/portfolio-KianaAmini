@@ -27,8 +27,7 @@ export default function AetherPage() {
       </div>
 
       <div className="first-image">
-      <img src={mockup1} alt="Aether App Showcase" className="main-image" />
-
+        <img src={mockup1} alt="Aether App Showcase" className="main-image" />
       </div>
 
       <div className="content-section">
@@ -61,18 +60,17 @@ export default function AetherPage() {
       </div>
 
       <div className="content-section">
-      <h2 className="section-title">Design Process</h2>
-<p className="section-text">
-  <strong>Designing with Clarity:</strong> At the heart of our design philosophy lies clarity. We believe that the simpler the interaction, the more accessible and empowering it is for the user. Our design choices prioritize intuitive navigation to remove barriers that might cause confusion or hesitation. Every element is thoughtfully crafted to ensure that users can focus on what truly matters—getting the job done quickly and efficiently.
-</p>
-<img src={Design} alt="Design Process" className="Design-image" />
-<p className="section-text">
-  <strong>Why This Design Approach:</strong> We intentionally embraced minimalism in our design to eliminate distractions and focus on providing a seamless user experience. By using clear visual hierarchies, concise language, and a simple interface, we ensure users feel confident and empowered, even when handling complex forms. This approach reduces cognitive overload and enhances the experience for caregivers who already face enough challenges.
-</p>
-<p className="section-text">
-  <strong>Impact:</strong> The result is a design that doesn’t just look good, but works harmoniously with the user's needs. It promotes confidence, minimizes frustration, and helps users engage more effectively with the platform. Through this clear, intuitive design, we enable users to focus on their caregiving duties with less distraction and more peace of mind.
-</p>
-
+        <h2 className="section-title">Design Process</h2>
+        <p className="section-text">
+          <strong>Designing with Clarity:</strong> At the heart of our design philosophy lies clarity. We believe that the simpler the interaction, the more accessible and empowering it is for the user. Our design choices prioritize intuitive navigation to remove barriers that might cause confusion or hesitation. Every element is thoughtfully crafted to ensure that users can focus on what truly matters—getting the job done quickly and efficiently.
+        </p>
+        <img src={Design} alt="Design Process" className="Design-image" />
+        <p className="section-text">
+          <strong>Why This Design Approach:</strong> We intentionally embraced minimalism in our design to eliminate distractions and focus on providing a seamless user experience. By using clear visual hierarchies, concise language, and a simple interface, we ensure users feel confident and empowered, even when handling complex forms. This approach reduces cognitive overload and enhances the experience for caregivers who already face enough challenges.
+        </p>
+        <p className="section-text">
+          <strong>Impact:</strong> The result is a design that doesn’t just look good, but works harmoniously with the user's needs. It promotes confidence, minimizes frustration, and helps users engage more effectively with the platform. Through this clear, intuitive design, we enable users to focus on their caregiving duties with less distraction and more peace of mind.
+        </p>
       </div>
 
       <div className="content-section">
@@ -88,8 +86,22 @@ export default function AetherPage() {
       <div className="content-section">
         <h2 className="section-title">Aether Promotional Video</h2>
         <p className="section-text">Our team decided on a humorous concept for the Aether promo video. While I had creative differences, wanting a more heartfelt and emotional approach to connect with the audience, I was excited to take charge of editing and production.</p>
-        <img src={Onboard} alt="Onboard" className="onboard-image" />
-        <p className="section-text">This project taught me valuable lessons in collaboration, compromise, and execution. While the final result wasn’t how I originally envisioned it, the experience strengthened my editing, directing, and production skills, reaffirming my passion for creating impactful video content.</p>
+        
+        <div className="video-container">
+          <iframe 
+            width="100%" 
+            height="400" 
+            src="https://www.youtube.com/embed/Et78N0iV-nI" 
+            title="Aether Promotional Video" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen
+          ></iframe>
+        </div>
+
+        <p className="section-text">
+          This project taught me valuable lessons in collaboration, compromise, and execution. While the final result wasn’t how I originally envisioned it, the experience strengthened my editing, directing, and production skills, reaffirming my passion for creating impactful video content.
+        </p>
       </div>
     </div>
   );
