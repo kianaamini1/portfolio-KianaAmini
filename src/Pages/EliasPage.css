@@ -67,10 +67,12 @@ body {
 
 .poster-display img {
   width: 100%;
-  max-width: 420px;
+  max-width: 250px;
+  height: 250px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 
 .footer {

@@ -1,8 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import AetherMockup from '../assets/images/Aether-mockup.png';
 import Onboard from '../assets/images/Onboard-mockup.jpg';
 import Header from '../components/Header'; 
+import mockup1 from '../assets/images/mockup1.jpg';
+import Design from '../assets/images/design-process.png';
+
 import './AetherPage.css';
 
 export default function AetherPage() {
@@ -24,7 +27,8 @@ export default function AetherPage() {
       </div>
 
       <div className="first-image">
-        <img src={AetherMockup} alt="Aether App Showcase" className="main-image" />
+      <img src={mockup1} alt="Aether App Showcase" className="main-image" />
+
       </div>
 
       <div className="content-section">
@@ -38,7 +42,7 @@ export default function AetherPage() {
 
       <blockquote className="quote">
         “Caregivers across Canada put their lives on hold to care ... We need to better ensure those who care are cared for too.”
-        <br />— Donna Thomson, family caregiver and author
+        <br /> <br />— Donna Thomson, family caregiver and author
       </blockquote>
 
       <div className="content-section">
@@ -53,17 +57,22 @@ export default function AetherPage() {
           <li>Less time spent with loved ones due to excessive form management</li>
         </ul>
         <p className="section-text">Aether streamlines the paperwork process, helping caregivers save valuable time by reducing repetitive data entry, ensuring accurate form completion, and simplifying administrative tasks.</p>
+        <img src={AetherMockup} alt="Aethermockup" className="mockup-image" />
       </div>
 
       <div className="content-section">
-        <h2 className="section-title">Design Process</h2>
-        <p className="section-text">
-          <strong>Designing with Clarity:</strong> Clarity is at the heart of our design philosophy, ensuring every interaction is intuitive and effortless.
-        </p>
-        <img src={Onboard} alt="Onboard" className="onboard-image" />
-        <p className="section-text">
-          <strong>Impact:</strong> Users can navigate with confidence, reducing frustration and improving engagement.
-        </p>
+      <h2 className="section-title">Design Process</h2>
+<p className="section-text">
+  <strong>Designing with Clarity:</strong> At the heart of our design philosophy lies clarity. We believe that the simpler the interaction, the more accessible and empowering it is for the user. Our design choices prioritize intuitive navigation to remove barriers that might cause confusion or hesitation. Every element is thoughtfully crafted to ensure that users can focus on what truly matters—getting the job done quickly and efficiently.
+</p>
+<img src={Design} alt="Design Process" className="Design-image" />
+<p className="section-text">
+  <strong>Why This Design Approach:</strong> We intentionally embraced minimalism in our design to eliminate distractions and focus on providing a seamless user experience. By using clear visual hierarchies, concise language, and a simple interface, we ensure users feel confident and empowered, even when handling complex forms. This approach reduces cognitive overload and enhances the experience for caregivers who already face enough challenges.
+</p>
+<p className="section-text">
+  <strong>Impact:</strong> The result is a design that doesn’t just look good, but works harmoniously with the user's needs. It promotes confidence, minimizes frustration, and helps users engage more effectively with the platform. Through this clear, intuitive design, we enable users to focus on their caregiving duties with less distraction and more peace of mind.
+</p>
+
       </div>
 
       <div className="content-section">

@@ -1,5 +1,4 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
 import EliasPetterssonImage from '../assets/images/elias-pettersson.png'; 
 import PeteyMockImage from '../assets/images/petey-mock.png'; 
 import BusImage from '../assets/images/bus.jpg'; 
@@ -8,9 +7,18 @@ import Header from '../components/Header';
 import './EliasPage.css';  
 
 export default function EliasPage() {
+  const [modalImage, setModalImage] = useState(null); 
+
+  const handleImageClick = (image) => {
+    setModalImage(image); 
+  };
+
+  const handleCloseModal = () => {
+    setModalImage(null); 
+  };
+
   return (
     <div className="elias-page">
-  
       <Header />
 
       <h1 className="elias-title">Elias Pettersson: Power and Precision</h1>
@@ -22,12 +30,32 @@ export default function EliasPage() {
         <img src={EliasPetterssonImage} alt="Elias Pettersson Poster" className="main-image" />
       </div>
 
-      <h2 className="section-title">Poster Displays</h2>
       <div className="poster-display">
-        <img src={PeteyMockImage} alt="Poster Frame" className="poster-image" />
-        <img src={BusImage} alt="Street Display" className="poster-image" />
-        <img src={TeamImage} alt="Second Poster Frame" className="poster-image" />
+        <img 
+          src={PeteyMockImage} 
+          alt="Poster Frame" 
+          className="poster-image" 
+          onClick={() => handleImageClick(PeteyMockImage)} 
+        />
+        <img 
+          src={BusImage} 
+          alt="Street Display" 
+          className="poster-image" 
+          onClick={() => handleImageClick(BusImage)} 
+        />
+        <img 
+          src={TeamImage} 
+          alt="Second Poster Frame" 
+          className="poster-image" 
+          onClick={() => handleImageClick(TeamImage)} 
+        />
       </div>
+
+      {modalImage && (
+        <div className="modal" onClick={handleCloseModal}>
+          <img src={modalImage} alt="Large view" className="modal-image" />
+        </div>
+      )}
     </div>
   );
 }
