@@ -120,3 +120,31 @@ body {
     height: auto;
   }
 }
+
+.bts-section {
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.bts-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.bts-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bts-image {
+  width: 100%;
+  max-width: 800px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

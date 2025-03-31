@@ -14,6 +14,7 @@ import HandImage from '../assets/images/hand.png';
 import ShoesImage from '../assets/images/shoes.png';
 import SkyImage from '../assets/images/sky.png';
 import TrackImage from '../assets/images/track.png';
+import BTSImage from '../assets/images/bts.png';
 import Header from '../components/Header';
 import './FashionPage.css';
 
@@ -62,7 +63,15 @@ export default function FashionPage() {
         <img src={SkyImage} alt="Sky Image" className="fashion-image" />
         <img src={TrackImage} alt="Track Image" className="fashion-image" />
       </div>
+      
+      <div className="bts-section">
+        <h2 className="bts-title">Behind The Scenes</h2>
+        <div className="bts-gallery">
+          <img src={BTSImage} alt="Behind The Scenes" className="bts-image" />
+        </div>
+      </div>
 
+   
       <footer className="footer">
         <p>Email: Kianaamini.design@gmail.com</p>
       </footer>
