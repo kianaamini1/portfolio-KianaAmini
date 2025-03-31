@@ -35,7 +35,7 @@ export default function FashionPage() {
         <a href="https://www.linkedin.com/in/kianaamini" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin"></i>
         </a>
-        <a href="https://www.instagram.com/kianaamini" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/in.stillmotion/" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-instagram"></i>
         </a>
       </div>
